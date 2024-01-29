@@ -1,0 +1,520 @@
+body{
+    padding: 0;
+    margin:0;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+.ul-reset{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.top{
+    background-position: center;
+    background-size: cover;
+    background: url('../img/токио.png') no-repeat center top;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+.header{
+    padding:15px 0; 
+}
+.container{
+    width: 100%;
+}
+.nav{
+    align-items: center;
+}
+.logo{
+    width: 65px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left:auto;
+}
+.menu li a{
+    list-style-type:none;
+    margin-right: 24px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:greenyellow;
+}
+
+.menu a{
+    color:white
+}
+.faq{
+    width: 157px;
+    height: 44px;
+    background-color:rgba(128, 128, 128, 0.377);
+    padding: 12px 24px;
+    color: white;
+    border-radius: 1em;
+    margin-left:25px;
+}
+.about{
+    margin-top:463px;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 75px;
+    letter-spacing: 2%;
+}
+.about h1{
+    color:white;
+}
+.buy{
+    margin-top:41px;
+}
+.dropdown{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:25px;
+    padding:40px;
+    background-color: rgba(128, 128, 128, 0.377);
+    border-radius: 1em;
+}
+.dropbutton{
+    width: 100%;
+    height: 100%;
+}
+.dropdown-select{
+    background-color: transparent !important;
+    color:white;
+    background-image:url('../img/ep_arrow-down.svg');
+    padding-left:10px;
+}
+.whiteborder{
+    background-color: transparent;
+    color: white;
+    border-radius:8px;
+    border:1px solid white;
+}
+/* Первая страница */
+.about-tour-media{
+    display:grid;
+    color:black;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    grid-template-rows: 500px;
+}
+.about-img {
+    position: relative;
+}
+.japimg{
+    border-radius: 1em;
+    position: absolute;
+    height: 400px;
+    width: 350px;
+}
+.vidos{
+    border:2px;
+    border-radius:1em;
+}
+.about-video{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 150px;
+    border-radius: 1em;
+    z-index: 1;
+    overflow: hidden;
+}
+.text-about-tour{
+    width:580px;
+    margin: auto 0 auto;
+}
+.text-about-tour h2{
+    font-weight: 800;
+    font-size:38px;
+}
+.text-about-tour p{
+    font-weight: 700;
+    font-size:16px;
+}
+.buttontour{
+    background-color:#1A3E3E;
+    padding: 16px 36px;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Конец первой страницы */
+/* Начало второй страницы */
+.about-tour2{
+    margin-bottom:120px;
+}
+.about-tour2-wrapp{
+    margin-top: 180px;
+    display:flex;
+    justify-content: space-between;
+    gap:25px;
+}
+.text-about-tour2{
+    color:black;
+    margin:auto;
+}
+.text-list{
+    margin-bottom: 25px;
+}
+.kartinki{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #d5d5d5;
+    border-radius: 1em;
+}
+.text-p21{
+    display:flex;
+    
+}
+.text-p21:not(:last-child){
+   margin-bottom: 10px;
+}
+
+.kartinkigrid{
+    display:grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px; 
+}
+.japanquad1{
+    grid-area: 1/1/1/1;
+    border-radius: 0 2em;
+    width:100%;
+    height: 100%;
+}
+.japanquad2{
+    grid-area: 2/1/2/1;
+    border-radius: 2em 0;
+    width:100%;
+    height:100%;
+}
+.japanquad3{
+    grid-area:2/2/1/2;
+    border-radius: 2em 0;
+    width:100%;
+    height: 100%;
+}
+.japanquad4{
+    grid-area:2/2/2/2;
+    border-radius: 0 2em;
+    width:100%;
+    height: 100%;
+}
+/* Конец второй страницы */
+/* Начало третьей страницы */
+.tours-subtitle{
+    font-size:30px;
+    color:rgb(1, 167, 1);
+    display:block;
+    text-align: center;
+}
+.tours-title{
+    font-size:50px;
+    color:black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.tours-list{
+    display: flex;
+    justify-content: space-between;
+}
+.tours-item{
+    height:500px;
+    width: 32%;
+    border-radius: 1em;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    transition: all .2s ease-out;
+}
+.tours-item:hover{
+    transform: translateY(0px);
+}
+.tours-item:first-child{
+    background-image: url('../img/Fudjiyamatop1.jpg');
+}
+.tours-item:nth-child(2){
+    background-image: url('../img/sakuratop2.jpg');
+}
+.tours-item:last-child{
+    background-image: url('../img/tokyotop3.jpg');
+}
+.tours-rate {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #0000008a;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    border-radius: 1em 0 0 1em;
+}
+.tours-rate-count {
+    font-weight: 700;
+}
+.ratingstar {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.tours-disc{
+    margin-top: auto;
+    position:relative;
+    padding: 15px;
+    border-radius: 0 0 1em 1em;
+}
+.opacity::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    filter: opacity(70%);
+    border-radius: 0 0 1em 1em;
+}
+.tours-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.tours-price{
+    padding:15px;
+    background-color: #1A3E3E;
+    border-radius: 1em;
+}
+.tours-link{
+    display:block;
+    text-decoration: none;
+    color:white;
+    background-color:#1A3E3E;
+    padding:15px;
+    position: relative;
+    border-radius: 1em;
+    text-align: center;
+}
+/* Конец третьей страницы */
+/* Начало четвертой страницы - блог */
+.blog-subtitle{
+    font-size:30px;
+    color:rgb(1, 167, 1);
+    display:block;
+    text-align: center;
+    margin-top:180px;
+}
+.blog-title{
+    font-size:50px;
+    color:black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.blog-list{
+    color:black;
+}
+.blog-wrap{
+    display:flex;
+    justify-content: space-between;
+    gap:25px;
+    margin-top: 20px;
+}
+.blog-content{
+    display:flex;
+    border-radius: 1em;
+    background-color: #00000017;
+}
+.blog-img{
+    height:300px;
+    width: 40%;
+    border-radius: 1em;
+    margin:15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blog-text{
+    margin:15px;
+    font-size:16px;
+}
+.time-read-more{
+    display:flex;
+    justify-content: space-between;
+}
+.date{
+    color:green;
+    font-weight: bold;
+}
+.read-more{
+    color:black;
+    text-decoration: none;
+}
+.read-more:hover{
+    color:rgb(5, 201, 5);
+}
+.blog-button{
+    background-color:#1A3E3E;
+    padding:20px;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    display:block;
+    margin-top:30px;
+    text-align: center;
+    height:60px;
+    width:300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/* Конец четвертой страницы */
+/* Начало пятой страницы - блог с фото */
+.grid-imgs{
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-rows: 280px 280px;
+    gap:5px;
+    justify-content: space-evenly;
+}
+.photo-border{
+    border-radius: 1em;
+}
+.blog-photo-1{
+    grid-area:1/3/1/1;
+    width:100%;
+    height: 100%;
+}
+.blog-photo-2{
+    grid-area:1/3/1/4;
+    width: 100%;
+    height:100%;
+}
+.blog-photo-3{
+    grid-area:1/4/1/4;
+    width: 100%;
+    height:100%;
+}
+.blog-photo-4{
+    grid-area:2/1/2/2;
+    width: 100%;
+    height:100%;
+}
+.blog-photo-5{
+    grid-area:2/4/2/2;
+    width: 100%;
+    height:100%;
+}
+.blog-photo-6{
+    grid-area:4/4/2/4;
+    width: 100%;
+    height:100%;
+}
+/* Конец пятой страницы */
+.newsletter{
+    background-color: whitesmoke;
+    width: 1120px;
+    height: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    position:relative;
+    top:-100px;
+    border-radius: 1em;
+    display:flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.newsletter-subtitle{
+    color:green;
+}
+.newsletter-title{
+    color:black;
+    width:500px;
+    font-weight: bold;
+}
+.newsletter-item:last-child{
+    color: black;
+    font-size:small;
+}
+.e-mail{
+    color:black;
+    font-weight: bold;
+}
+.input-email{
+  border-radius:10px;
+  border: 1px solid #eee;
+  transition: .3s border-color;
+  padding: 20px;
+}
+.input-email:hover {
+  border: 1px solid #aaa;
+}
+.e-mail-button{
+    background-color:#1A3E3E;
+    padding:20px;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+.footer{
+    margin-top:198px;
+    height: 900px;
+    width: 100%;
+    background-color:#1A3E3E;
+}
+.site-footer{
+    padding-top: 40px;
+    display:flex;
+    gap:30px;
+}
+.footer-text-aboutcomp{
+    width:500px;
+    height:auto;
+}
+.footer-info{
+    margin-bottom:90px;
+}
+.tel-link{
+    margin-bottom:40px;
+}
+.footer-link{
+    color:white;
+}
+.socialweb{
+    margin-right: 15px;
+}
+.footer-items{
+    margin-bottom: 20px;
+}
+.footer-links{
+    color:white;
+    text-decoration: none;
+    font-size:16px;
+}
+.footer-links:hover{
+    color:green;
+}
+
