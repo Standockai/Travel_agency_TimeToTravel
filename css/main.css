@@ -16,7 +16,7 @@ img{
 .top{
     background-position: center;
     background-size: cover;
-    background: url('../img/токио.png') no-repeat center top;
+    background: url('https://raw.githubusercontent.com/Standockai/Travel_agency_TimeToTravel/main/img/%D1%82%D0%BE%D0%BA%D0%B8%D0%BE.png') no-repeat center top;
     padding-bottom: 80px;
     margin-bottom: 80px;
 }
@@ -89,7 +89,7 @@ img{
 .dropdown-select{
     background-color: transparent !important;
     color:white;
-    background-image:url('../img/ep_arrow-down.svg');
+    background-image:url('https://raw.githubusercontent.com/Standockai/Travel_agency_TimeToTravel/d8ca38296d3d0896f90b365ca8ec2fc9f6fc542b/img/ep_arrow-down.svg');
     padding-left:10px;
 }
 .whiteborder{
@@ -122,9 +122,10 @@ img{
 .about-video{
     width: 350px;
     height: 400px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    right: 0px;
+    top: 200px;
+    bottom: 0px;
     left: 150px;
     border-radius: 1em;
     z-index: 1;
@@ -250,13 +251,13 @@ img{
     transform: translateY(0px);
 }
 .tours-item:first-child{
-    background-image: url('../img/Fudjiyamatop1.jpg');
+    background-image: url('https://raw.githubusercontent.com/Standockai/Travel_agency_TimeToTravel/main/img/Fudjiyamatop1.jpg');
 }
 .tours-item:nth-child(2){
-    background-image: url('../img/sakuratop2.jpg');
+    background-image: url('https://raw.githubusercontent.com/Standockai/Travel_agency_TimeToTravel/main/img/sakuratop2.jpg');
 }
 .tours-item:last-child{
-    background-image: url('../img/tokyotop3.jpg');
+    background-image: url('https://raw.githubusercontent.com/Standockai/Travel_agency_TimeToTravel/main/img/tokyotop3.jpg');
 }
 .tours-rate {
     display: flex;
@@ -268,14 +269,13 @@ img{
     top: 40px;
     border-radius: 1em 0 0 1em;
 }
-.tours-rate-count {
-    font-weight: 700;
-}
 .ratingstar {
     width: 25px;
     margin-right: 10px;
 }
-
+.tours-rate-count {
+    font-weight: 700;
+}
 .tours-disc{
     margin-top: auto;
     position:relative;
@@ -431,10 +431,16 @@ img{
     height:100%;
 }
 /* Конец пятой страницы */
+.footer{
+    margin-top:198px;
+    height: 900px;
+    width: 100%;
+    background-color:#1A3E3E;
+}
 .newsletter{
     background-color: whitesmoke;
-    width: 1120px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right:auto;
     position:relative;
@@ -461,14 +467,26 @@ img{
     color:black;
     font-weight: bold;
 }
+.input-email:focus {
+    outline: 0;
+}
 .input-email{
   border-radius:10px;
   border: 1px solid #eee;
   transition: .3s border-color;
   padding: 20px;
 }
-.input-email:hover {
-  border: 1px solid #aaa;
+.invalid{
+  border-radius:10px;
+  border: 1px solid #ff0000;
+  transition: .1s border-color;
+  padding: 20px;
+}
+.valid{
+  border-radius:10px;
+  border: 1px solid #00ff40;
+  transition: .1s border-color;
+  padding: 20px; 
 }
 .e-mail-button{
     background-color:#1A3E3E;
@@ -478,12 +496,6 @@ img{
     text-decoration: none;
     text-align: center;
     display: inline-block;
-}
-.footer{
-    margin-top:198px;
-    height: 900px;
-    width: 100%;
-    background-color:#1A3E3E;
 }
 .site-footer{
     padding-top: 40px;
