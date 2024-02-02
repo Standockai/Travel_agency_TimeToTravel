@@ -25,7 +25,7 @@ a.ui-state-default {
   position:relative;
 }
 #ui-datepicker-div {
-  background-color: rgba(128, 128, 128, 0.76);
+  background-color: rgb(128, 128, 128);
   padding: 10px;
   border-radius: 1em;
 }
