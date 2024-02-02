@@ -684,6 +684,18 @@ margin-right: 20px;
     }
     .blog-title {
     font-size: 45px;}
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-img {
+    width:auto;}
+    .blog-photo-1,.blog-photo-2,.blog-photo-3,.blog-photo-4,.blog-photo-5,.blog-photo-6{
+    grid-area:auto;
+}
+    .grid-imgs {
+    grid-template-columns: auto;
+    grid-template-rows: auto;}
+
 }
 
 
@@ -698,15 +710,7 @@ margin-right: 20px;
 .blog-img {
     width:auto;
 }
-.blog-content {
-    flex-direction: column;
 }
-.blog-photo-1,.blog-photo-2,.blog-photo-3,.blog-photo-4,.blog-photo-5,.blog-photo-6{
-    grid-area:auto;
-}
-.grid-imgs {
-    grid-template-columns: auto;
-    grid-template-rows: auto;}}
 
 
 /* 320px */
