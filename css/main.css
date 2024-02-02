@@ -42,7 +42,7 @@ img{
 }
 .menu li a{
     list-style-type:none;
-    margin-right: 24px;
+    margin-right: 20px;
     text-decoration: none;
 }
 .menu li a:hover{
@@ -99,12 +99,11 @@ img{
     border:1px solid white;
 }
 /* Первая страница */
-.about-tour-media{
-    display:grid;
-    color:black;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    grid-template-rows: 500px;
+.about-tour-media {
+    display: flex;
+    color: black;
+    gap: 25%;
+    margin-bottom: 25%;
 }
 .about-img {
     position: relative;
@@ -187,8 +186,8 @@ img{
 
 .kartinkigrid{
     display:grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(2,250px);
     grid-gap: 10px; 
 }
 .japanquad1{
@@ -356,7 +355,7 @@ img{
     background-repeat: no-repeat;
 }
 .blog-text{
-    margin:15px;
+    padding: 15px;
     font-size:16px;
 }
 .time-read-more{
@@ -392,8 +391,8 @@ img{
 /* Начало пятой страницы - блог с фото */
 .grid-imgs{
     display: grid;
-    grid-template-columns: 280px 280px 280px 280px;
-    grid-template-rows: 280px 280px;
+    grid-template-columns: repeat(4,4fr);
+    grid-template-rows: repeat(2,300px);
     gap:5px;
     justify-content: space-evenly;
 }
@@ -433,23 +432,17 @@ img{
 /* Конец пятой страницы */
 .footer{
     margin-top:198px;
-    height: 900px;
-    width: 100%;
+    max-width: 100%;
     background-color:#1A3E3E;
 }
-.newsletter{
+.newsletter {
     background-color: whitesmoke;
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right:auto;
-    position:relative;
-    top:-100px;
     border-radius: 1em;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     padding: 15px;
     align-items: center;
+    transform: translateY(-80px);
 }
 .newsletter-subtitle{
     color:green;
@@ -462,10 +455,12 @@ img{
 .newsletter-item:last-child{
     color: black;
     font-size:small;
+    margin-top: 10px;
 }
 .e-mail{
     color:black;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .input-email:focus {
     outline: 0;
@@ -500,7 +495,7 @@ img{
 .site-footer{
     padding-top: 40px;
     display:flex;
-    gap:30px;
+    justify-content: space-between;
 }
 .footer-text-aboutcomp{
     width:500px;
@@ -530,3 +525,199 @@ img{
     color:green;
 }
 
+
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+    .about-tour-media{
+        margin-bottom: 30%;
+    }
+    .blog-wrap {
+    flex-wrap: wrap;
+}
+.grid-imgs {
+    grid-template-rows: repeat(2,240px);
+}
+.footer-text-aboutcomp {
+    padding: 0% 10% 0% 0;
+}
+.our-services{
+    flex-basis: 40%;
+}
+}
+
+/* 991px */
+@media screen and (max-width: 991px) {
+.menu {
+    font-size: 14px;
+}
+.menu li a {
+    margin-right: 5px;
+}
+.dropdown {
+    padding: 15px;
+    gap: 10px;}
+.about-tour-media {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.text-about-tour {
+    margin: 40% 0 auto;
+    align-self:center;
+}
+    .about-tour2-wrapp {
+    margin-top: 15%;
+    flex-direction: column;
+    gap: 35px;  
+    align-items: center;
+}
+.kartinkigrid {
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,55%);
+    grid-gap: 15px;
+}
+.about-img {
+    position: relative;
+    padding-left: 5%;
+}
+.japimg {
+    height: 480px;
+    width: 420px;}
+    .about-video {
+    height: 480px;
+    width: 420px;}
+    .tours-item{
+        width:100%;
+    }
+    .tours-list{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .blog-subtitle {
+    margin-top: 15%;}
+    .grid-imgs {
+    grid-template-rows: repeat(2,220px);
+}
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter-e-mail{
+        text-align: center;
+    }
+    .newsletter-subtitle-wrapp{
+        text-align: center;
+    }
+    .site-footer {
+    flex-direction: column;
+}
+    .footer-text-aboutcomp {
+    padding: 0 0 5% 0;
+}
+}
+
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    .dropdown {
+    grid-template-columns: auto;}
+    .whiteborder {
+    padding: 3%;
+}
+.menu {
+    flex-direction: column;
+}
+.menu li {
+    margin-bottom: 10%;
+}
+.about {
+    margin-top: 40%;}
+}
+.menu li a {
+    margin-right: 20px;
+}
+.faq {
+    margin-left: 0;
+}
+
+
+/* 425px */
+@media screen and (max-width: 425px) {
+.menu{
+    flex-direction: column;
+}
+.menu li a{
+margin-right: 20px;
+}
+.menu li{
+    margin-bottom: 10%;
+}
+.faq {
+    margin-left: 0;
+}
+.dropdown {
+    grid-template-columns: auto;
+}
+.whiteborder {
+    padding: 3%;
+}
+.about {
+    margin-top: 350px;}
+.about-img {
+    position: relative;
+}
+.japimg {
+    height: 265px;
+    width: 230px;}
+    .about-video {
+    height: 265px;
+    width: 230px;
+    top: 120px;
+    left: 110px;}
+    .text-about-tour {
+    width:auto;
+}
+    .newsletter-title{
+        width:auto;
+    }
+    .footer-text-aboutcomp{
+        width: auto;
+    }
+    .blog-title {
+    font-size: 45px;}
+}
+
+
+/* 375px */
+@media screen and (max-width: 375px) {
+    .about-img{
+        padding-left:0;
+    }
+    .blog-title {
+    font-size: 200%;
+}
+.blog-img {
+    width:auto;
+}
+.blog-content {
+    flex-direction: column;
+}
+.blog-photo-1,.blog-photo-2,.blog-photo-3,.blog-photo-4,.blog-photo-5,.blog-photo-6{
+    grid-area:auto;
+}
+.grid-imgs {
+    grid-template-columns: auto;
+    grid-template-rows: auto;}}
+
+
+/* 320px */
+@media screen and (max-width: 320px) {
+    .japimg {
+    height: 175px;
+    width: 155px;}
+    .about-video {
+    height: 175px;
+    width: 155px;}
+    .tours-title{
+    font-size: 250%;
+    }
+}
