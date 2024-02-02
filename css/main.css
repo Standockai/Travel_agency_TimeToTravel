@@ -639,9 +639,8 @@ img{
     margin-left: 0;
 }
 
-
-/* 425px */
-@media screen and (max-width: 425px) {
+/* 430px */
+@media screen and (max-width: 430px) {
 .menu{
     flex-direction: column;
 }
