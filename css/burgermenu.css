@@ -6,29 +6,31 @@
 }
 .burger {
     width: 30px;
-    height: 3px;
+    height: 30px;
     background-color: white;
     margin: 5px;
+    border-radius: 1em;
 }
-.menu{
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
- 
-.menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-}
-
 @media (max-width: 1210px) {
     .burger-menu {
         display: block;
     }
- 
     .menu{
         display: none;
     }
+    .menu li{
+        margin: 10% 5%;
+    }
+    .faq{
+        margin-left:0;
+    }
+    .show-menu{
+        display:inline-block;
+        position: absolute;
+        right:10%;
+        top:10%;
+        background-color: rgba(0, 0, 0, 0.842);
+        border-radius: 1em;
+    }    
+
 }

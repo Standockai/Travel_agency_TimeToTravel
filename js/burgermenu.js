@@ -1,3 +1,9 @@
-document.querySelector(".burger-menu").addEventListener("click", () => {
-document.querySelector(".menu").classList.toggle("show-menu");
-});
+
+document.querySelector(".burger-menu").onclick = ShowMenu;
+
+function  ShowMenu(){
+    document.querySelector(".menu").classList.toggle("show-menu");
+    
+    console.log('проверка');
+}
+

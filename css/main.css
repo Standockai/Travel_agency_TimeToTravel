@@ -555,9 +555,6 @@ img{
 .menu {
     font-size: 14px;
 }
-.menu li a {
-    margin-right: 5px;
-}
 .dropdown {
     padding: 15px;
     gap: 10px;}
