@@ -3,6 +3,7 @@ const dropdown = document.getElementById('material');
 const datepicker = document.getElementById('datepicker');
 const quantity = document.getElementById('quantity');
 
+
 const toastLiveExample = document.getElementById('liveToast')
 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
 
@@ -45,11 +46,13 @@ document.getElementById("form-button").onclick = function() {
     //     showToast("Не удалось",false);
     //     // Если не валидная
     // }
-    console.log(quantity.value,datepicker.value,material.value)
+    console.log(material.value,datepicker.value,quantity.value)
+    // submit("город: " + material.value + " Дата поездки: " + datepicker.value +" участников: "+ quantity.value)
+    submit(`Город:  ${material.value} \n Дата поездки: ${datepicker.value} \n Участников: ${quantity.value}`)
 }
 
 
-function submit (data = null,msg = "") {
+function submit (data) {
 
     if(!data){
         return false
@@ -57,13 +60,14 @@ function submit (data = null,msg = "") {
     
 const token = '6849282604:AAHSsHYnfI9hpOmoiB8sD8vw-hBK7gRZJ_Y';
 const chatId = '-4118309344';
-const message = `Подписался на рассылку ${data}`;
+const message = `Оформлен тур \n ${data}`;
 
     fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`, { method: 'POST'})
     .then(response => response.json())
         .then(data => {
             
             if(data.ok) {
+
                 showToast('Успешная отправка',true);
             }
         })
