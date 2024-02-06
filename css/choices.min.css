@@ -240,7 +240,7 @@
 
 .choices__list--dropdown {
   visibility: hidden;
-  z-index: 1;
+  z-index: 5;
   position: absolute;
   width: 100%;
   background-color:rgb(128 128 128);

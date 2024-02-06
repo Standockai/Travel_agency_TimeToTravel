@@ -27,9 +27,13 @@
                 <div class="nav">
                     <img src="img/logo.png" alt="LOGOTIP" class="logo">
                     <div class="burger-menu">
-                        <div class="burger"></div>
+                        <div class="burger-lines">
+                            <div class="burger"></div>
+                            <div class="burger"></div>
+                            <div class="burger"></div>
+                        </div>
                         <ul class="menu ul-reset">
-                            <li> <a href="main.html">Главная</a></li>
+                            <li> <a href="index.html">Главная</a></li>
                             <li> <a href="gid.html">Про гида</a></li>
                             <li> <a href="info.html">Программа тура</a></li>
                             <li> <a href="buy.html">Стоимость</a></li>
@@ -50,8 +54,7 @@
             <div class="container">
                 <div class="dropdown">
                     <div>
-                        <select name="material" id="material" class="dropdown-select">
-                            <option>Локация для тура</option>
+                        <select name="material" id="material" class="dropdown-select" placeholder="Локация для тура">
                             <option>Токио</option>
                             <option>Осака</option>
                             <option>Камакура</option>
@@ -60,21 +63,16 @@
                         </select>
                     </div>
                     <div class="datepicker-wrapp">
-                        <input type="text" id="datepicker" placeholder="Дата похода" class="datepick whiteborder">
+                        <input name="date" type="text" id="datepicker" placeholder="Дата похода"
+                            class="datepick whiteborder">
                     </div>
                     <div>
-                        <select name="material" id="material2" class="dropdown-select">
-                            <option value="">Участники</option>
-                            <option>Один</option>
-                            <option>Два</option>
-                            <option>Три</option>
-                            <option>Четыре</option>
-                            <option>Пять</option>
-                            <option>Шесть</option>
-                        </select>
+                        <input type="number" name="quantity" class="quantity whiteborder" id="quantity"
+                            placeholder="Участники" min="1" max="10">
                     </div>
                     <div>
-                        <button class="dropbutton whiteborder">Найти программу</button>
+                        <button id="form-button" class="dropbutton whiteborder">Найти
+                            программу</button>
                     </div>
                 </div>
             </div>
@@ -426,15 +424,17 @@
             </div>
         </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="js/tour-form.js"></script>
     <script src="js/burgermenu.js"></script>
     <script src="js/validate.js"></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-
     <script src="js/choices.min.js"></script>
     <script src="js/choices.js"></script>
     <script>

@@ -1,6 +1,11 @@
 const emailInput = document.getElementById('input-email');
+const dropdown = document.getElementById('material');
+const datepicker = document.getElementById('datepicker');
+const quantity = document.getElementById('quantity');
+
 const toastLiveExample = document.getElementById('liveToast')
 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+
 
 emailInput.addEventListener('input', () => {
 
@@ -30,12 +35,29 @@ document.getElementById("e-mail-button").onclick = function() {
     }
 }
 
+document.getElementById("form-button").onclick = function() {
+    
+    // if( validateEmail(emailInput.value)){
+    //     submit(emailInput.value)
+        // Отправка запроса на сервер
+    // } else {
+    //     toastBootstrap.show()
+    //     showToast("Не удалось",false);
+    //     // Если не валидная
+    // }
+    console.log(quantity.value,datepicker.value,material.value)
+}
 
-function submit (email) {
+
+function submit (data = null,msg = "") {
+
+    if(!data){
+        return false
+    }
     
 const token = '6849282604:AAHSsHYnfI9hpOmoiB8sD8vw-hBK7gRZJ_Y';
 const chatId = '-4118309344';
-const message = `Подписался на рассылку ${email}`;
+const message = `Подписался на рассылку ${data}`;
 
     fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`, { method: 'POST'})
     .then(response => response.json())

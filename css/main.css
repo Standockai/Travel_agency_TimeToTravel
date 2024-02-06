@@ -92,6 +92,11 @@ img{
     background-image:url('https://raw.githubusercontent.com/Standockai/Travel_agency_TimeToTravel/d8ca38296d3d0896f90b365ca8ec2fc9f6fc542b/img/ep_arrow-down.svg');
     padding-left:10px;
 }
+.quantity{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
 .whiteborder{
     background-color: transparent;
     color: white;

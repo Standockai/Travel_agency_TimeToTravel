@@ -5,10 +5,3 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
-document.addEventListener("DOMContentLoaded", function() {
-  const element = document.querySelector('#material2');
-  const choices = new Choices(element, {
-    searchEnabled: false
-  });
-
-});
