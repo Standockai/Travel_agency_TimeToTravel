@@ -143,11 +143,30 @@ img{
 }
 @media screen and (max-width:800px){
     .gids-circle{
-    width: 250px;
-    height: 250px;}
+        width: 250px;
+        height: 250px;}
+            .carousel-item {
+        margin-left: 30%;
+    }
     .job-flex{
-    display:flex;
-    flex-direction: column;
+        display:flex;
+        flex-direction: column;
+}
 }
 
-}
+@media screen and (max-width:600px){
+    .gids-circle{
+        width: 200px;
+        height: 200px;}
+    .job-button {
+        padding: 16px 50px;}
+    .carousel-item {
+        margin-left: 15%;
+    }
+    .about-gids:nth-child(2){
+        font-size: auto;}
+    .about-gids{
+    margin-top:30px;
+    width:auto;
+    padding: 0 20% 0 0;}
+    }
