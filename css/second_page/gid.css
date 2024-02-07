@@ -133,11 +133,21 @@ img{
         display:none;
     }
     .carousel{
-    display:block;}
-.carousel-control-next, .carousel-control-prev {
-    top:400px;
-display:block}
-.carousel-item {
-    margin-left: 30%;
+        display:block;}
+    .carousel-control-next, .carousel-control-prev {
+        top:400px;
+        display:block}
+    .carousel-item {
+        margin-left: 30%;
     }
+}
+@media screen and (max-width:800px){
+    .gids-circle{
+    width: 250px;
+    height: 250px;}
+    .job-flex{
+    display:flex;
+    flex-direction: column;
+}
+
 }
