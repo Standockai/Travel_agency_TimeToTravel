@@ -1,0 +1,143 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.ul-reset{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.top{
+    background-position: center;
+    background-size: cover;
+    background-color:#1A3E3E;
+}
+.header{
+    padding:15px 0; 
+}
+.container{
+    width: 100%;
+}
+.nav{
+    align-items: center;
+}
+.logo{
+    width: 65px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left:auto;
+}
+.menu li a{
+    list-style-type:none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:greenyellow;
+}
+
+.menu a{
+    color:white
+}
+.faq{
+    width: 157px;
+    height: 44px;
+    background-color:rgba(128, 128, 128, 0.377);
+    padding: 12px 24px;
+    color: white;
+    border-radius: 1em;
+    margin-left:25px;
+}
+.about-gid h1{
+    font-weight:bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.gids{
+    display: flex;
+    gap:5%;
+    justify-content: space-between;
+}
+.gids-circle{
+    display:block;
+    background-color: #68A7A7;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.151);
+}
+.gids-img{
+    position:relative;
+    width:80%;    
+    left:10%;
+    right:10%;
+    top:10%;
+    bottom:10%;
+}
+.about-gids{
+    margin-top:30px;
+    width:350px;    
+}
+.about-gids h2{
+    font-weight: 600;
+}
+.about-gids:nth-child(2){
+    font-size: 25px;
+}
+.gids-item{
+    margin-right: 10px;
+}
+.job h2{
+    margin-top: 100px;
+    margin-bottom:100px;
+    text-align: center;
+    font-weight: 600;
+}
+.job-flex{
+    display:flex;
+    gap: 100px;
+    margin: 50px;
+}
+.job-list li{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.job-button{
+    font-weight: 600;
+    font-size:30px;
+    background-color:#1A3E3E;
+    padding: 16px 100px;
+    color: white;
+    border-radius: 1em;
+}
+.carousel{
+    display:none;
+}
+.carousel-control-next, .carousel-control-prev {
+    display: none;}
+
+@media screen and (max-width:1220px){
+    .gids{
+        display:none;
+    }
+    .carousel{
+    display:block;}
+.carousel-control-next, .carousel-control-prev {
+    top:400px;
+display:block}
+.carousel-item {
+    margin-left: 30%;
+    }
+}

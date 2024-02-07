@@ -466,7 +466,7 @@ img{
     font-weight: bold;
     margin-bottom: 10px;
 }
-.input-email:focus {
+input{
     outline: 0;
 }
 .input-email{
@@ -479,13 +479,11 @@ img{
   border-radius:10px;
   border: 1px solid #ff0000;
   transition: .1s border-color;
-  padding: 20px;
 }
 .valid{
   border-radius:10px;
   border: 1px solid #00ff40;
   transition: .1s border-color;
-  padding: 20px; 
 }
 .e-mail-button{
     background-color:#1A3E3E;

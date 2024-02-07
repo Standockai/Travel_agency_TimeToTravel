@@ -7,7 +7,6 @@ const quantity = document.getElementById('quantity');
 const toastLiveExample = document.getElementById('liveToast')
 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
 
-
 emailInput.addEventListener('input', () => {
 
     const email = emailInput.value;
@@ -21,57 +20,60 @@ emailInput.addEventListener('input', () => {
             emailInput.classList.remove('valid');
             emailInput.classList.add('invalid');
         }
-    });
+});
 
+datepicker.addEventListener('input',() => {
+    
+    const date = datepicker.value;
+
+    if (validateDate(date)) {
+            // Валидный Email
+            datepicker.classList.remove('invalid');
+            datepicker.classList.add('valid');
+        } else {
+            // Невалидный Email
+            datepicker.classList.remove('valid');
+            datepicker.classList.add('invalid');
+        }
+});
 
 document.getElementById("e-mail-button").onclick = function() {
     
     if( validateEmail(emailInput.value)){
-        submit(emailInput.value)
-        // Отправка запроса на сервер
+        submit(`${emailInput.value} - подписался на рассылку`)
     } else {
         toastBootstrap.show()
         showToast("Не удалось",false);
-        // Если не валидная
     }
 }
 
 document.getElementById("form-button").onclick = function() {
-    
-    // if( validateEmail(emailInput.value)){
-    //     submit(emailInput.value)
-        // Отправка запроса на сервер
-    // } else {
-    //     toastBootstrap.show()
-    //     showToast("Не удалось",false);
-    //     // Если не валидная
-    // }
-    console.log(material.value,datepicker.value,quantity.value)
-    // submit("город: " + material.value + " Дата поездки: " + datepicker.value +" участников: "+ quantity.value)
-    submit(`Город:  ${material.value} \n Дата поездки: ${datepicker.value} \n Участников: ${quantity.value}`)
+
+    if( validateDate(datepicker.value)){
+    submit(`Город: ${material.value} \nДата поездки: ${datepicker.value} \nУчастников: ${quantity.value}`
+    )}
+    else {
+        toastBootstrap.show()
+        showToast("Не удалось",false);
+    }
 }
 
 
-function submit (data) {
+function submit (data = null) {
 
-    if(!data){
-        return false
-    }
+    if(!data) return false
     
-const token = '6849282604:AAHSsHYnfI9hpOmoiB8sD8vw-hBK7gRZJ_Y';
-const chatId = '-4118309344';
-const message = `Оформлен тур \n ${data}`;
+    const token = '6849282604:AAHSsHYnfI9hpOmoiB8sD8vw-hBK7gRZJ_Y';
+    const chatId = '-4118309344';
+    const message = data;
 
     fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`, { method: 'POST'})
     .then(response => response.json())
         .then(data => {
-            
             if(data.ok) {
-
                 showToast('Успешная отправка',true);
             }
         })
-        
         .catch(error => console.error('Error:', error));
 }
 
@@ -85,7 +87,7 @@ function showToast(msg,validate){
     } else {
         toastLiveExample.classList.add('bg-danger');
         toastLiveExample.classList.remove('bg-success');  
-                }
-        toastBootstrap.show()
     }
+        toastBootstrap.show()
+}
     
