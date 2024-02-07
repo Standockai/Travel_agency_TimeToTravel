@@ -518,6 +518,9 @@ input{
 .footer-items{
     margin-bottom: 20px;
 }
+.arrow-right{
+    width:15px;
+}
 .footer-links{
     color:white;
     text-decoration: none;

@@ -137,17 +137,16 @@ img{
     .carousel-control-next, .carousel-control-prev {
         top:400px;
         display:block}
-    .carousel-item {
-        margin-left: 30%;
-    }
-}
+    .carousel-item-wrapp{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+}}
+
 @media screen and (max-width:800px){
     .gids-circle{
         width: 250px;
         height: 250px;}
-            .carousel-item {
-        margin-left: 30%;
-    }
     .job-flex{
         display:flex;
         flex-direction: column;
@@ -160,13 +159,10 @@ img{
         height: 200px;}
     .job-button {
         padding: 16px 50px;}
-    .carousel-item {
-        margin-left: 15%;
-    }
-    .about-gids:nth-child(2){
-        font-size: auto;}
     .about-gids{
-    margin-top:30px;
-    width:auto;
-    padding: 0 20% 0 0;}
+        margin-top:30px;
+        width:auto;
+        padding:10%;}
+        .job-list li{
+        font-size: 25px;}
     }
