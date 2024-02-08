@@ -1,0 +1,249 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.ul-reset{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.h2-left{
+    font-size:90px;
+    font-weight: 600;
+    text-align: left;
+}
+.h2-right{
+    font-size:90px;
+    font-weight: 600;
+    text-align: right;
+}
+button{
+    border: 0;
+}
+.top{
+    background-position: center;
+    background-size: cover;
+    background-color:#1A3E3E;
+}
+.header{
+    padding:15px 0; 
+}
+.container{
+    width: 100%;
+}
+.nav{
+    align-items: center;
+}
+.logo{
+    width: 65px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left:auto;
+}
+.menu li a{
+    list-style-type:none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:greenyellow;
+}
+
+.menu a{
+    color:white
+}
+.faq{
+    width: 157px;
+    height: 44px;
+    background-color:rgba(128, 128, 128, 0.377);
+    padding: 12px 24px;
+    color: white;
+    border-radius: 1em;
+    margin-left:25px;
+}
+.background-img-1{
+    background-image: url("/../img/third_page/Tokyo.png");
+    background-position: center;
+    background-size: cover;
+}
+.info-section-wrapp{
+    display: flex;
+    color:white;
+    padding-top:90px;
+    padding-bottom:100px;
+}
+.info-flex{
+    flex-basis: 70%;
+}
+.info-abouttour-list{
+    font-size:35px;
+}
+.info-abouttour-list li{
+    margin-bottom: 20px;
+}
+.info-button-wrapp {
+    align-self: end;
+    margin: 0 auto;
+}
+.info-button1{
+    color:white;
+    background-color: #1A3E3E;
+    padding: 5% 6%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size:30px;
+    font-weight: 600;
+}
+.info-button2{
+    color:white;
+    background-color: #1A3E3E;
+    padding: 4% 11%;
+    border-radius: 15px;
+    font-size:30px;
+    font-weight: 600;
+}
+.background-img-2{
+    background-image: url("/../img/third_page/Atami.png");
+    background-position: center;
+    background-size: cover;
+}
+.info-abouttour-list-right{
+    font-size:35px;
+    text-align: right;
+}
+.info-abouttour-list-right li{
+    margin-bottom: 20px;
+    text-align: right;
+}
+.background-img-3{
+    background-image: url("/../img/third_page/Osaka.png");
+    background-position: center;
+    background-size: cover;
+}
+.background-img-4{
+    background-image: url("/../img/third_page/Kamakura.png");
+    background-position: center;
+    background-size: cover;
+}
+.background-img-5{
+    background-image: url("/../img/third_page/Fujiyama.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.footer{
+    max-width: 100%;
+    background-color:#1A3E3E;
+}
+.site-footer{
+    padding-top: 100px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-text-aboutcomp{
+    width:500px;
+    height:auto;
+    color:white;    
+}
+.footer-info{
+    margin-bottom:90px;
+}
+.tel-link{
+    margin-bottom:40px;
+}
+.footer-link{
+    color:white;
+}
+.socialweb{
+    margin-right: 15px;
+}
+.our-services ul li{
+    color:white;
+}
+.footer-items{
+    margin-bottom: 20px;
+}
+.arrow-right{
+    width:15px;
+}
+.footer-links{
+    color:white;
+    text-decoration: none;
+    font-size:16px;
+}
+.footer-links:hover{
+    color:green;
+}
+
+
+@media screen and (max-width:1000px){
+ .info-section-wrapp{
+    flex-direction: column;
+ }
+ .info-button-wrapp {
+    align-self: center;
+}
+.h2-left{
+    text-align: center;
+}
+.h2-right{
+    text-align: center;
+}
+.info-abouttour-list{
+    text-align: center;
+}
+.info-abouttour-list li{
+    text-align: center;
+}
+.info-abouttour-list-right{
+    text-align: center;
+}
+.info-abouttour-list-right li{
+    text-align: center;
+}
+.info-button-wrapp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px}
+.h2-left{
+    font-size: 65px;
+}
+.h2-right{
+    font-size: 65px;
+}
+.footer-info{
+    margin-bottom:10%;
+}
+}
+
+@media screen and (max-width:600px){
+.h2-left{
+    font-size:40px;
+}
+.h2-right{
+    font-size:40px;
+}
+
+.info-abouttour-list {
+    font-size: 25px;
+}
+.info-abouttour-list-right {
+    font-size: 25px;
+}
+.footer-text-aboutcomp{
+    width:300px;
+    height:auto;
+    color:white;    
+}
+}
