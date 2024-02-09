@@ -1,0 +1,138 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.ul-reset{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.top{
+    background-position: center;
+    background-size: cover;
+    background-color:#1A3E3E;
+}
+.header{
+    padding:15px 0; 
+}
+.container{
+    width: 100%;
+}
+.nav{
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 65px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left:auto;
+}
+.menu li a{
+    list-style-type:none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:greenyellow;
+}
+
+.menu a{
+    color:white
+}
+.faq{
+    width: 157px;
+    height: 44px;
+    background-color:rgba(128, 128, 128, 0.377);
+    padding: 12px 24px;
+    color: white;
+    border-radius: 1em;
+    margin-left:25px;
+}
+.documents{
+    margin-top:30px;
+    text-align: center;
+}
+.documents li{
+    font-weight: bold;
+    font-size:250%;
+}
+.documents li:last-child{
+    font-weight: 400;
+    font-size:150%;
+}
+.docs-wrapp{
+    display: flex;    
+    justify-content: space-around;
+    gap:5%;
+    margin-top: 3%;
+}
+.docs{
+    display: flex;
+    flex-direction: column;
+}
+.docs h2{
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 130%;
+    text-align: center;
+}
+.docs-img{
+    height:190px;
+}
+
+
+.footer{
+    max-width: 100%;
+    background-color:#1A3E3E;
+}
+.site-footer{
+    padding-top: 100px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-text-aboutcomp{
+    width:500px;
+    height:auto;
+    color:white;    
+}
+.footer-info{
+    margin-bottom:90px;
+}
+.tel-link{
+    margin-bottom:40px;
+}
+.footer-link{
+    color:white;
+}
+.socialweb{
+    margin-right: 15px;
+}
+.our-services ul li{
+    color:white;
+}
+.footer-items{
+    margin-bottom: 20px;
+}
+.arrow-right{
+    width:15px;
+}
+.footer-links{
+    color:white;
+    text-decoration: none;
+    font-size:16px;
+}
+.footer-links:hover{
+    color:green;
+}

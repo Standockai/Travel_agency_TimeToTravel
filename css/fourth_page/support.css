@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.ul-reset{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.top{
+    background-position: center;
+    background-size: cover;
+    background-color:#1A3E3E;
+}
+.header{
+    padding:15px 0; 
+}
+.container{
+    width: 100%;
+}
+.nav{
+    align-items: center;
+}
+.logo{
+    width: 65px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left:auto;
+}
+.menu li a{
+    list-style-type:none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:greenyellow;
+}
+
+.menu a{
+    color:white
+}
+.faq{
+    width: 157px;
+    height: 44px;
+    background-color:rgba(128, 128, 128, 0.377);
+    padding: 12px 24px;
+    color: white;
+    border-radius: 1em;
+    margin-left:25px;
+}
+
+.support-list-wrapp{
+    margin-top: 30px;
+}
+.support-list li h2{
+    font-weight: bold;
+    font-size:40px;
+}
+.support-list li{
+    margin-bottom: 15px;
+}
+.email{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size:18px;
+}
+.tel{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer{
+    max-width: 100%;
+    background-color:#1A3E3E;
+}
+.site-footer{
+    padding-top: 100px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-text-aboutcomp{
+    width:500px;
+    height:auto;
+    color:white;    
+}
+.footer-info{
+    margin-bottom:90px;
+}
+.tel-link{
+    margin-bottom:40px;
+}
+.footer-link{
+    color:white;
+}
+.socialweb{
+    margin-right: 15px;
+}
+.our-services ul li{
+    color:white;
+}
+.footer-items{
+    margin-bottom: 20px;
+}
+.arrow-right{
+    width:15px;
+}
+.footer-links{
+    color:white;
+    text-decoration: none;
+    font-size:16px;
+}
+.footer-links:hover{
+    color:green;
+}
+
+
+@media screen and (max-width:500px){
+    .footer-text-aboutcomp {
+    width: auto;
+}
+}
