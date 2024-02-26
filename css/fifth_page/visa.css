@@ -12,6 +12,9 @@ img{
     max-width: 100%;
     height:auto;
 }
+p{
+    margin:0;
+}
 .top{
     background-position: center;
     background-size: cover;
@@ -60,7 +63,7 @@ img{
     margin-left:25px;
 }
 .documents{
-    margin-top:30px;
+    margin-top:60px;
     text-align: center;
 }
 .documents li{
@@ -90,6 +93,71 @@ img{
 .docs-img{
     height:190px;
 }
+
+
+
+
+.visa-type-country-wrapp{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+.visa-name-tel-wrapp{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 9%;
+}
+.visa-type{
+    width:206px;
+}
+.dropdown-select{
+    width:100%;
+    padding: 4px 2px;
+    border-radius: 5px;
+}
+.input-tel{
+    border-radius: 5px;
+    padding: 4px 2px;
+}
+.input-name{
+    border-radius: 5px;
+    padding: 4px 2px;
+}
+.input-email{
+    border-radius: 5px;
+    padding: 4px 2px;
+}
+.dropbutton{
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+.application-wrapp{
+    display: flex;
+    margin-bottom:3%;
+    margin-top:3%;    
+    gap: 5%;
+}
+.application{
+    flex-basis: 50%;
+    border: dashed;
+    border-radius: 1em;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer{
