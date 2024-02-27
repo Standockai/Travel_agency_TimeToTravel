@@ -93,10 +93,6 @@ p{
 .docs-img{
     height:190px;
 }
-
-
-
-
 .visa-type-country-wrapp{
     display: flex;
     justify-content: space-around;
@@ -128,11 +124,15 @@ p{
     padding: 4px 2px;
 }
 .dropbutton{
+    margin: 5%;
     border-radius: 5px;
     margin-left:auto;
     margin-right: auto;
     display: block;
     text-align: center;
+    color:white;
+    background-color: #1A3E3E;
+    padding:2% 7%;
 }
 .application-wrapp{
     display: flex;
@@ -145,21 +145,6 @@ p{
     border: dashed;
     border-radius: 1em;
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     max-width: 100%;
     background-color:#1A3E3E;
@@ -203,4 +188,36 @@ p{
 }
 .footer-links:hover{
     color:green;
+}
+
+@media screen and (max-width:1200px){
+    .application-wrapp{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .application{
+        margin-bottom: 7%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .visa-name-tel-wrapp{
+        padding:5%;
+    }
+    .docs-wrapp{
+        flex-wrap:wrap;
+    }
+}
+@media screen and (max-width:520px) {
+    .footer-text-aboutcomp{
+        width:320px;
+    }
+    .visa-name-tel-wrapp{
+        flex-wrap:wrap;
+    }
+    .visa-type-country-wrapp{
+        flex-wrap: wrap;
+    }
+    .application-wrapp{
+        margin:0;
+    }
 }

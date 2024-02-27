@@ -1,0 +1,28 @@
+.btn-up {
+  position: fixed;
+  background-color: #699797ab;
+  right: 20px;
+  bottom: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("../img/for-up-button.png");
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color:#008080; /* цвет заднего фона при наведении */
+  }
+}
